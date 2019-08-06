@@ -1,0 +1,13 @@
+
+<h3>Send it with the following contents.</h3>
+
+<%= form_with(model: @blog, url: blogs_path, local: true) do |form| %>
+  <%= form.hidden_field :content %>
+  <p>content:<%= @blog.content %></p>
+  <%= form.submit  "submit" %>
+<% end %>
+
+<%= form_with(model: @blog, url: new_blog_path, local: true, method: 'get') do |form| %>
+  <%= form.hidden_field :content %>
+  <%= form.submit "back" %>
+<% end %>

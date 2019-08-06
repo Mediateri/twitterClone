@@ -1,0 +1,14 @@
+<h1>Blogs All of them</h1>
+<p class="message"><%= notice %></p>
+
+<% @blogs.each do |blog| %>
+
+   <p>Blog : <%= blog.content %></p>
+   <p>Created at : <%= blog.created_at %></p>
+   <p> <%= link_to 'details', blog_path(blog.id) %>
+    <%= link_to link_to "edit", edit_blog_path(blog.id) %>
+    <%= link_to link_to 'Delete ', blog_path(blog.id), method: :delete %></p>
+    <br/>
+<br/>
+<% end %>
+<%= link_to 'Post a new blog', new_blog_path %>
