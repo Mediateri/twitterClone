@@ -1,5 +1,6 @@
 .header {
-    margin: none;
+    top: 0px;
+    left: 0px;
     height: 50px;
     width: 100%;
     background: dodgerblue;
@@ -9,22 +10,37 @@
     height: 50px;
 }
 
+.center {
+    border-style: groove;
+    width: 50%;
+    float: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 10px;
+    margin-left: 25%;
+    background-color: #fff;
+}
+
 .footer {
     background: #343a40;
     color: #686868;
     height: 50px;
     text-align: center;
-    bottom: 0px;
+    bottom: 0;
     left: 0px;
-    padding-top: 20px;
     width: 100%;
-    position: fixed;
+    display: table;
+}
+
+label {
+    display: inline-block;
+    border-bottom: #f8f8f8;
 }
 
 textarea {
     width: 100%;
-    height: 70px;
-    padding: 12px 20px;
+    height: 50px;
+    padding: 8px 15px;
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 4px;
@@ -45,15 +61,18 @@ submit {
     margin-bottom: 20px;
 }
 
-.blog_title,
 a {
     color: blue;
     text-decoration: none;
+    background-color: transparent;
+    background: #f8f8f8;
+    padding: 2px;
 }
 
 #error_explanation {
     background: azure;
     color: gold;
+    height: 100%;
 }
 
 p {
